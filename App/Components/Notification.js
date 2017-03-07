@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'; // eslint-disable-line no-unused-vars
+import React from 'react';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/Octicons';
 
@@ -29,13 +29,16 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginLeft: 15
   },
-  title: {
-    flex: 1,
-    marginHorizontal: 10
-  },
   iconWrapper: {
     paddingVertical: 5,
-
+  },
+  messageButton: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  messageText: {
+    justifyContent: 'center',
+    marginHorizontal: 10,
   },
   checkIcon: {
     fontSize: 20,
@@ -44,9 +47,9 @@ const styles = StyleSheet.create({
   }
 });
 
-class Notification extends Component {
+class Notification extends React.Component {
   static propTypes = {
-    details: PropTypes.object.isRequired
+    details: React.PropTypes.object.isRequired
   };
 
   _getTypeIcon() {
@@ -90,10 +93,10 @@ class Notification extends Component {
         <Icon name={this._getTypeIcon()} style={styles.typeIcon} />
 
         <TouchableHighlight
-          style={{flex: 1}}
+          style={styles.messageButton}
           onPress={() => this.openNotification()}
           underlayColor="#FFF">
-          <Text style={styles.title} numberOfLines={1}>{details.subject.title}</Text>
+          <Text style={styles.messageText} numberOfLines={1}>{details.subject.title}</Text>
         </TouchableHighlight>
 
         <TouchableHighlight
