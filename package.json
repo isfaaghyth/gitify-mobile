@@ -1,32 +1,34 @@
 {
-  "name": "gitify-mobile",
+  "name": "Gitify",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "eslint 'App/' 'index.ios.js' 'index.android.js'"
   },
+  "rnpm": {
+    "assets": [
+      "sounds"
+    ]
+  },
   "dependencies": {
     "immutable": "=3.8.1",
-    "react": "=15.1.0",
-    "react-addons-pure-render-mixin": "=15.1.0",
-    "react-native": "=0.27.1",
-    "react-native-sound": "=0.8.3",
-    "react-native-vector-icons": "=2.0.3",
-    "react-redux": "=4.4.5",
-    "redux": "=3.5.2",
-    "redux-storage": "=4.0.0",
-    "redux-storage-decorator-filter": "=1.1.4",
-    "redux-storage-engine-reactnativeasyncstorage": "=1.0.0",
-    "redux-storage-merger-immutablejs": "=1.0.1",
-    "redux-thunk": "=2.1.0",
+    "react": "=15.4.2",
+    "react-addons-pure-render-mixin": "=15.4.2",
+    "react-native": "=0.42.0",
+    "react-native-sound": "=0.9.1",
+    "react-native-vector-icons": "=4.0.0",
+    "react-redux": "=5.0.3",
+    "redux": "=3.6.0",
+    "redux-storage": "=4.1.2",
+    "redux-storage-decorator-filter": "=1.1.8",
+    "redux-storage-engine-reactnativeasyncstorage": "=1.0.5",
+    "redux-storage-merger-immutablejs": "=1.0.5",
+    "redux-thunk": "=2.2.0",
     "underscore": "=1.8.3"
   },
   "devDependencies": {
-    "babel-eslint": "=6.0.4",
-    "eslint": "=2.11.1",
-    "eslint-plugin-react": "=5.1.1",
-    "eslint-plugin-react-native": "=1.1.0-beta",
-    "redux-logger": "=2.6.1"
+    "eslint-config": "dabapps/eslint-config#2.0.5",
+    "redux-logger": "=2.8.2"
   }
 }
