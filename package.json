@@ -7,10 +7,11 @@
     "test": "eslint 'App/' 'index.ios.js' 'index.android.js'"
   },
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "immutable": "=3.8.1",
     "react": "=15.1.0",
     "react-addons-pure-render-mixin": "=15.1.0",
-    "react-native": "=0.27.1",
+    "react-native": "^0.27.1",
     "react-native-sound": "=0.8.3",
     "react-native-vector-icons": "=2.0.3",
     "react-redux": "=4.4.5",
