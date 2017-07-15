@@ -4,8 +4,8 @@ export default {
   STORAGE_KEY: 'gitify-mobile',
 
   oAuthOptions: {
-    client_id: '8a99ca115f5d52d21ec4',
-    client_secret: '258527033a19eec16c91bec2bce503d286be15a1',
+    client_id: '530b36fcb10ab7db1830',
+    client_secret: '6a88b92935894dadb518ed30c255b9e82528596e',
     scopes: ['user:email', 'notifications']
   },
 
